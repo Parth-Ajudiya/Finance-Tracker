@@ -1,0 +1,11 @@
+<div class="r-bloak">
+	<%= render 'layouts/messages' %>
+</div>  
+
+<% if  @stock %>
+	<div class="card card-header r-bloak">
+		<strong> Symbol :</strong> <%= @stock.ticker %>
+		<strong> Name :</strong> <%= @stock.name %>
+		<strong> Price :</strong> <%= @stock.last_price %>
+	</div>
+<%end%>
